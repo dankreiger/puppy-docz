@@ -1,5 +1,9 @@
 # Typescript Docz example
 
+## Demo
+
+[Component Playground](https://boring-thompson-04b35b.netlify.com/)
+
 ## Setup
 
 ```sh

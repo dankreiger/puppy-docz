@@ -1,7 +1,6 @@
 {
   "name": "puppy-docz",
   "version": "1.0.0",
-  "private": true,
   "license": "MIT",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",

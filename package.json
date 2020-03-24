@@ -1,0 +1,51 @@
+{
+  "name": "puppy-docz",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.ts",
+    "build:styleguide": "docz build",
+    "dev": "docz dev"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,tsx,jsx,json,css}": [
+      "prettier --single-quote --write"
+    ]
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@rollup/plugin-commonjs": "11.0.2",
+    "@rollup/plugin-node-resolve": "7.1.1",
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
+    "docz": "latest",
+    "husky": "4.2.3",
+    "lint-staged": "10.0.9",
+    "prettier": "2.0.2",
+    "rollup": "2.1.0",
+    "rollup-plugin-typescript2": "0.26.0",
+    "typescript": "3.8.3"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

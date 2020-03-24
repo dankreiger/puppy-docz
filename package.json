@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "build": "rollup -c rollup.config.ts",
-    "build:styleguide": "docz build",
+    "build:styleguide": "yarn add react react-dom && docz build",
     "dev": "docz dev"
   },
   "husky": {

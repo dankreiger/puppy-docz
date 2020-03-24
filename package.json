@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "rollup -c rollup.config.ts",
-    "build:styleguide": "yarn add react react-dom && docz build",
+    "build:styleguide": "yarn add react@16.13.1 react-dom@16.13.1 && docz build",
     "dev": "docz dev"
   },
   "husky": {
@@ -44,7 +44,7 @@
     "typescript": "3.8.3"
   },
   "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   }
 }
